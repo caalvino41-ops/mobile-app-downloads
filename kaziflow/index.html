@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b6b57">
+<meta http-equiv="Cache-Control" content="no-store">
+<title>KaziFlow Android Installer</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#173a34;background:#f4faf7}
+*{box-sizing:border-box}body{margin:0;padding:24px;min-height:100vh;display:grid;place-items:center}
+.card{width:min(560px,100%);background:#fff;border:1px solid #dcebe5;border-radius:28px;padding:26px;box-shadow:0 18px 48px rgba(14,85,72,.12)}
+.badge{display:inline-block;background:#e9f8f2;color:#0b6b57;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:800}
+h1{font-size:30px;margin:14px 0 8px}p{line-height:1.55;color:#5d756f}.meta{font-size:13px;margin:12px 0 20px}
+.btn{display:block;width:100%;text-align:center;text-decoration:none;border-radius:16px;padding:16px 18px;margin-top:12px;font-weight:900}
+.primary{background:#0b6b57;color:#fff}.secondary{background:#eaf7f3;color:#0b6b57;border:1px solid #cfe8df}
+.small{font-size:12px;color:#71857f;word-break:break-all;margin-top:18px}.steps{background:#f8fbfa;border-radius:16px;padding:14px 16px;margin-top:18px}
+</style>
+</head>
+<body><main class="card">
+<span class="badge">Verified production build</span>
+<h1>Install KaziFlow</h1>
+<p>This phone-optimized build is much smaller than the old universal APK and is intended for modern Android phones.</p>
+<div class="meta"><strong>Version 1.0.1 · Build 4 · 37.95 MB</strong><br>Package: com.kaziflow.production</div><a class="btn primary" href="./KaziFlow-Android-arm64-v1.0.1-build4.apk" download="KaziFlow-Android-v1.0.1.apk">Download KaziFlow for Android</a>
+<a class="btn secondary" href="intent://caalvino41-ops.github.io/mobile-app-downloads/kaziflow/#Intent;scheme=https;package=com.android.chrome;end">Open this page in Chrome</a>
+<div class="steps"><strong>If your in-app browser gets stuck:</strong><p>Tap <b>Open this page in Chrome</b> first, then use the green download button. After the download finishes, open Chrome → ⋮ → Downloads, or Files → Downloads, and tap the APK.</p></div>
+<p class="small">SHA-256: 01cc3946ee1e3c7001bea8910ce7306053a0c828e70e4e5ceeca199e572adf5d</p>
+<p class="small">Universal fallback: <a href="https://github.com/caalvino41-ops/mobile-app-downloads/releases/download/kaziflow-v1.0.1-build4/KaziFlow-Android-v1.0.1-build4.apk">89.38 MB APK</a></p>
+</main>
+<script>
+const isAndroid=/Android/i.test(navigator.userAgent);if(!isAndroid){document.querySelector('.steps p').textContent='This installer is for Android devices.'}
+</script>
+</body>
+</html>
