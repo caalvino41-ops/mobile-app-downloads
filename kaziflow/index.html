@@ -1,14 +1,12 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b6b57"><title>KaziFlow Android Test Build</title>
-<style>
-*{box-sizing:border-box}body{margin:0;padding:24px;font-family:system-ui,sans-serif;background:#f4faf7;color:#173a34;min-height:100vh;display:grid;place-items:center}.card{width:min(560px,100%);background:#fff;border:1px solid #dcebe5;border-radius:24px;padding:26px}h1{font-size:30px}.badge{background:#fff0d2;padding:8px 12px;border-radius:16px;font-size:13px}p,li{line-height:1.6}.btn{display:block;padding:17px;text-align:center;background:#0b6b57;color:white;text-decoration:none;border-radius:14px;font-weight:700;margin:20px 0}.small{font-size:12px;overflow-wrap:anywhere;color:#526c65}.note{padding:14px;background:#f4faf7;border-radius:12px}
-</style></head><body><main class="card">
-<span class="badge">Build 6 candidate — physical-phone launch validation pending</span>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b6b57"><title>KaziFlow Android Internal Review Build</title>
+<style>*{box-sizing:border-box}body{margin:0;padding:24px;font-family:system-ui,sans-serif;background:#f4faf7;color:#173a34;min-height:100vh;display:grid;place-items:center}.card{width:min(600px,100%);background:#fff;border:1px solid #dcebe5;border-radius:24px;padding:26px}h1{font-size:30px}.badge{display:inline-block;background:#fff0d2;padding:8px 12px;border-radius:16px;font-size:13px}.ok{background:#eaf6ef;padding:14px;border-radius:12px;margin-top:14px}.warn{background:#fff6e7;padding:14px;border-radius:12px;margin-top:14px}p,li{line-height:1.6}.btn{display:block;padding:17px;text-align:center;background:#0b6b57;color:white;text-decoration:none;border-radius:14px;font-weight:700;margin:20px 0}.small{font-size:12px;overflow-wrap:anywhere;color:#526c65}</style></head><body><main class="card">
+<span class="badge">Internal review build</span>
 <h1>Install KaziFlow</h1>
-<p><strong>Version 1.0.3 · Build 6 · Android ARM64</strong></p>
-<p>This build contains the Android startup fixes for gesture-handler initialization and Firebase Auth module resolution. It is signed with the same release certificate as Build 5, so it can install as an update.</p>
-<a class="btn" href="./KaziFlow-Android-arm64-v1.0.3-build6.apk" download="KaziFlow-Android-arm64-v1.0.3-build6.apk">Download KaziFlow Build 6</a>
-<div class="note"><strong>On your Android phone</strong><ol><li>Open this page in Chrome.</li><li>Download Build 6 and open it from Chrome Downloads.</li><li>Install it as an update to the existing KaziFlow app.</li><li>Open KaziFlow and leave it running for at least one minute.</li><li>If it closes, capture the exact message. When the phone is connected to the CEO PC with USB debugging enabled, the crash log can be captured directly.</li></ol></div>
-<p>This remains a validation build while physical-device launch testing is pending.</p>
-<p class="small">Package: com.kaziflow.production<br>Version code: 6<br>SHA-256: A879EA9DA0600DC5472C5C6451A2AEF2D1F7964AFEF53C7BC08A96B44AE63F15</p>
+<p><strong>Version 1.0.4 · Build 7 · Android ARM64</strong></p>
+<div class="ok"><strong>What changed</strong><br>Build 7 keeps the startup fix from Build 6 and adds an internal review route so you can open the worker or employer side without waiting for SMS verification. It also improves Kenyan-number validation, adds a visible resend countdown, and fixes the backend logic that could incorrectly start the one-minute resend lock after an SMS delivery failure.</div>
+<a class="btn" href="./KaziFlow-Android-arm64-v1.0.4-build7.apk" download="KaziFlow-Android-arm64-v1.0.4-build7.apk">Download KaziFlow Build 7</a>
+<div class="warn"><strong>SMS OTP status</strong><br>The live API is currently returning a delivery failure from the SMS-provider path. The review buttons do not bypass a real account: they create a temporary local preview only, so live applications, hiring actions and other protected backend actions remain unavailable until SMS delivery is repaired.</div>
+<p><strong>To review the app:</strong> choose whether you want to find work or hire, continue to the phone-verification screen, then use <em>Preview worker</em> or <em>Preview employer</em>. Relaunching the app returns you to normal onboarding.</p>
+<p class="small">Package: com.kaziflow.production<br>Version code: 7<br>SHA-256: D9E1C910C1C5FE7DCEB5F820E12E7CB6866FF993FE06EF2A6C1829FA06B7E629</p>
 </main></body></html>
